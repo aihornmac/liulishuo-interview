@@ -1,0 +1,18 @@
+{
+  "presets": [
+    ["env", { "modules": false }],
+    "stage-0",
+    "react"
+  ],
+  "plugins": [
+    "lodash",
+    "transform-decorators-legacy",
+    "transform-runtime",
+    ["module-resolver", {
+      "alias": {
+        "components": "./src/components",
+        "containers": "./src/containers"
+      }
+    }]
+  ]
+}
